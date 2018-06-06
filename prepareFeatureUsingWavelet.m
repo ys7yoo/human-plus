@@ -1,6 +1,6 @@
 clear
 
-sel = input('Select dataset: 0 enoding, 1 retrieval ')
+sel = input('Select dataset: 0 enoding, 1 retrieval ');
 switch sel
     case 0
         load data/en_data.mat

@@ -21,7 +21,7 @@ source ~/ml/bin/activate
 
 3. Install required packages 
 ```
-pip install scipy matplotlib
+pip install scipy matplotlib jupyter
 ```
 
 

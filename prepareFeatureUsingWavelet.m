@@ -37,5 +37,18 @@ f=[1:12 13:2:30 32:4:56 64:4:100]; % removed power line noise around 60 Hz
 WT_cor=cwt_analysis(Nostim_cor, fs, f);
 WT_incor=cwt_analysis(Nostim_incor, fs, f);
 
+% 42x38x12801x36
 
+
+%% reduce the 3rd dimension by taking average over time
+WT_cor_onset_3s = squeeze(mean(WT_cor(:,:,3201:8000,:),3)); % onset + 3sec
+WT_incor_onset_3s = squeeze(mean(WT_incor(:,:,3201:8000,:),3)); % onset + 3sec
+
+WT_cor_onset_1p5s = squeeze(mean(WT_cor(:,:,3201:5601,:),3)); % onset + 1.5sec
+WT_incor_onset_1p5s = squeeze(mean(WT_incor(:,:,3201:5601,:),3)); % onset + 1.5sec
+
+save WT_cor_onset_3s
+save WT_incor_onset_3s
+save WT_cor_onset_1p5s
+save WT_incor_onset_1p5s
 

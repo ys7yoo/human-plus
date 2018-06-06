@@ -25,6 +25,11 @@ pip install scipy matplotlib sklearn jupyter
 ```
 
 
+When you're done you can deactivate the virtual environment by
+```
+deactivate
+```
+
 ## Proprocessing 
 
 ## Frequency-Time domain feature 뽑기 

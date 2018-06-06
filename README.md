@@ -24,8 +24,20 @@ source ~/ml/bin/activate
 pip install scipy matplotlib sklearn jupyter
 ```
 
+### Launching a Jupyter notebook
 
-When you're done you can deactivate the virtual environment by
+1. Activate the virtual environment.
+```
+source ~/ml/bin/activate
+```
+
+2. Inside of the virtual environment, launch a notebook.
+```
+jupyter notebook
+```
+
+
+3. When you're done you can deactivate the virtual environment by
 ```
 deactivate
 ```

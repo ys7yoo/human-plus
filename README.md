@@ -3,6 +3,45 @@
 data analysis
 
 
+# Recommended setting
+
+## Matlab
+##  Python + Jupyter notebook
+### Setting up a virtual enviromnet for data analysis
+
+1. make a virtual environment called `ml`
+```
+python3 -m venv ~/ml
+```
+
+2. activate the virtual environment
+```
+source ~/ml/bin/activate
+```
+
+3. Install required packages 
+```
+pip install scipy matplotlib sklearn jupyter
+```
+
+### Launching a Jupyter notebook
+
+1. Activate the virtual environment.
+```
+source ~/ml/bin/activate
+```
+
+2. Inside of the virtual environment, launch a notebook.
+```
+jupyter notebook
+```
+
+
+3. When you're done you can deactivate the virtual environment by
+```
+deactivate
+```
+
 ## Proprocessing 
 
 ## Frequency-Time domain feature 뽑기 

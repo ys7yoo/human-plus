@@ -3,10 +3,11 @@
 data analysis
 
 
-## Recommended setting
-# Matlab
-# Python + Jupyter notebook
-## Setting up a virtual enviromnet for data analysis
+# Recommended setting
+
+## Matlab
+##  Python + Jupyter notebook
+### Setting up a virtual enviromnet for data analysis
 
 1. make a virtual environment called `ml`
 ```

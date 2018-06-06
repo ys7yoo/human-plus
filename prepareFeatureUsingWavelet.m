@@ -1,7 +1,14 @@
 clear
 
-load data/en_data.mat
-
+sel = input('Select dataset: 0 enoding, 1 retrieval ')
+switch sel
+    case 0
+        load data/en_data.mat
+    case 1
+        load data/ret_data
+    otherwise
+        error('select 0 or 1')
+end
 % whos
 %   Nostim_all        42x12801x44            189249984  double              
 %   Nostim_cor        42x12801x36            154840896  double              

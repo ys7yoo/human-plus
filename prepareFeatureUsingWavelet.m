@@ -50,9 +50,12 @@ WT_incor_onset_1p5s = squeeze(mean(WT_incor(:,:,3201:5601,:),3)); % onset + 1.5s
 % reshape to (ch x freq) x trials = 2D
 [numCh, numFreq, numTrial] = size(WT_cor_onset_3s);
 WT_cor_onset_3s = reshape(WT_cor_onset_3s, numCh*numFreq, numTrial);
+[numCh, numFreq, numTrial] = size(WT_incor_onset_3s);
 WT_incor_onset_3s = reshape(WT_incor_onset_3s, numCh*numFreq, numTrial);
 
+[numCh, numFreq, numTrial] = size(WT_cor_onset_1p5s);
 WT_cor_onset_1p5s = reshape(WT_cor_onset_1p5s, numCh*numFreq, numTrial);
+[numCh, numFreq, numTrial] = size(WT_incor_onset_1p5s);
 WT_incor_onset_1p5s = reshape(WT_incor_onset_1p5s, numCh*numFreq, numTrial);
 
 

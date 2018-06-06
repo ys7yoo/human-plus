@@ -58,9 +58,7 @@ WT_cor_onset_1p5s = reshape(WT_cor_onset_1p5s, numCh*numFreq, numTrial);
 [numCh, numFreq, numTrial] = size(WT_incor_onset_1p5s);
 WT_incor_onset_1p5s = reshape(WT_incor_onset_1p5s, numCh*numFreq, numTrial);
 
-
-save WT_cor_onset_3s
-save WT_incor_onset_3s
-save WT_cor_onset_1p5s
-save WT_incor_onset_1p5s
+%% save features to files
+save feature_onset_3s WT_cor_onset_3s  WT_incor_onset_3s -v7.3
+save feature_onset_1p5s WT_cor_onset_1p5s WT_incor_onset_1p5s -v7.3
 

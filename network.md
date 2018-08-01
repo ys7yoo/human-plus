@@ -20,3 +20,6 @@
 |37, 38 | Parahippocampal gyrus | ParaHPC |
 |39, 40 | Occipitotemporal gyrus | OciTemp |
 | 41, 42 | Temporal pole | TempPole |
+
+## Visualization
+![](pic/channels.png)
